@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SwiftUINow (0.1.0)
+  - SnapKit (4.2.0)
+  - SwiftUINow (0.1.0):
+    - SnapKit
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
+    - SnapKit
 
 EXTERNAL SOURCES:
   SwiftUINow:
@@ -20,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SwiftUINow: 230ab22fc84a94f0dabd0cb9181cf494c076c41e
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftUINow: f981e497b1f5f3c435421bdb0efee6aeaccac914
 
 PODFILE CHECKSUM: 18545636f5a1cdc317fc041a943bdee6d1a22603
 

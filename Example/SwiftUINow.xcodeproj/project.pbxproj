@@ -40,12 +40,12 @@
 		607FACE51AFB9204008FA782 /* SwiftUINow_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUINow_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		67AB38F3A08F0A27252A8F28 /* SwiftUINow.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftUINow.podspec; path = ../SwiftUINow.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6AD509F0A87E27A1C665D020 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		67AB38F3A08F0A27252A8F28 /* SwiftUINow.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftUINow.podspec; path = ../SwiftUINow.podspec; sourceTree = "<group>"; };
+		6AD509F0A87E27A1C665D020 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		87A095B889BB5942D1EA8326 /* Pods-SwiftUINow_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUINow_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftUINow_Example/Pods-SwiftUINow_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8C2B87C5E0D3EF363FF8BAAE /* Pods-SwiftUINow_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUINow_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUINow_Example/Pods-SwiftUINow_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BCF666C5FF503F52C9A30CCC /* Pods-SwiftUINow_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUINow_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUINow_Tests/Pods-SwiftUINow_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CF27C49389528C08987923E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CF27C49389528C08987923E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DA8455AE07EC50CEEDD872B5 /* Pods_SwiftUINow_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUINow_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,6 +156,7 @@
 				BCF666C5FF503F52C9A30CCC /* Pods-SwiftUINow_Tests.debug.xcconfig */,
 				5CA5CB86E6002EA8E5C776FB /* Pods-SwiftUINow_Tests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,7 +228,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftUINow_Example/Pods-SwiftUINow_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftUINow/SwiftUINow.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftUINow.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

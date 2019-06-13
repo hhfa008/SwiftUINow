@@ -1,24 +1,29 @@
 //
 //  ViewController.swift
-//  SwiftUINow
+//  StackView
 //
-//  Created by hhfa008 on 06/13/2019.
-//  Copyright (c) 2019 hhfa008. All rights reserved.
+//  Created by hhfa on 2019/6/12.
+//  Copyright © 2019 xx. All rights reserved.
 //
 
+import SnapKit
+import SwiftUINow
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let v = body.content
+        view.addSubview(v)
+        v.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var body: View {
+        VStack {
+            Text("Hello SwiftUI").color(.blue)
+        }
     }
-
 }
-

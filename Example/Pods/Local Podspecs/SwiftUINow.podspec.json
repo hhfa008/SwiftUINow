@@ -1,8 +1,8 @@
 {
   "name": "SwiftUINow",
   "version": "0.1.0",
-  "summary": "A short description of SwiftUINow.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "using SwiftUI in iOS 9 ~ iOS 12 now",
+  "description": "using SwiftUI in iOS 9 ~ iOS 12 now",
   "homepage": "https://github.com/hhfa008/SwiftUINow",
   "license": {
     "type": "MIT",
@@ -16,7 +16,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "SwiftUINow/Classes/**/*"
+  "source_files": "SwiftUINow/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
 }
