@@ -1,0 +1,6 @@
+framework module Pods_SwiftUINow_Tests {
+  umbrella header "Pods-SwiftUINow_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module SwiftUINow {
+  umbrella header "SwiftUINow-umbrella.h"
+
+  export *
+  module * { export * }
+}
