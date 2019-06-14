@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftUINow'
-  s.version          = '0.1.0'
+s.version = '0.1.1'
   s.summary          = 'using SwiftUI in iOS 9 ~ iOS 12 now'
 
 # This description is used to generate tags and improve search results.
