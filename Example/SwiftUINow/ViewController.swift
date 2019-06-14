@@ -13,17 +13,21 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let v = body.content
-        view.addSubview(v)
-        v.snp.makeConstraints { make in
+        let aView = body.content
+        view.addSubview(aView)
+        aView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
-        // Do any additional setup after loading the view.
+        
     }
 
     var body: View {
         VStack {
             Text("Hello SwiftUI").color(.blue)
+            ForEach([0,1]){ d in
+                Text("Hello SwiftUI\(d)").color(.blue)
+            }
         }
+       
     }
 }

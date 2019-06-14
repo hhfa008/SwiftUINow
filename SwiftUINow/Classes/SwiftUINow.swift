@@ -90,3 +90,19 @@ public struct HStack:View {
         contents = [stackView]
     }
 }
+
+
+public struct ForEach<Data, Content> : View where Data : RandomAccessCollection, Content : View {
+    public var contents: [UIView]
+    public var data: Data
+
+    public init(_ data: Data, content: @escaping (Data.Element) -> Content) {
+        self.data = data
+        
+       contents =  data.map { (e) -> Content  in
+            content(e)
+        }.map {$0.contents}.flatMap{$0}
+        
+    }
+
+}
